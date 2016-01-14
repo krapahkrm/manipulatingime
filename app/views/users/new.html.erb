@@ -1,0 +1,32 @@
+<% provide(:title, 'Sign up') %>
+<%= render 'layouts/header' %> 
+
+<section id="content">
+    <h1>Create your account</h1>
+    	<%=form_for(@user) do |f| %>
+    	<%= render 'shared/error_messages' %>
+    		<div>
+    		<%= f.label :name, "Name" %>
+    		<%= f.text_field :name, :placeholder => "e.g. Egor Osokin", :class => "not_enter"%>
+    		</div>
+    		<div>
+    		<%= f.label :email, "Email" %>
+    		<%= f.text_field :email, :placeholder => "name@site.dom", :class => "not_enter"%>
+    		</div>
+    		<div>
+    		<%= f.label :password, "Password" %>
+    		<%= f.password_field :password, :placeholder => "Ajoqp01_q", :class => "not_enter" %>
+    		</div>
+    		<div>
+    		<%= f.label :password_confirmation, "Confirm a password" %>
+    		<%= f.password_field :password_confirmation, :class => "not_enter"%>
+    		</div>
+    		<div>
+    		<%= f.submit "Create New Account" %>
+    		</div>
+		<% end %>
+    </section>
+
+    <footer>
+        <p>Manipulating Time &copy; 2016</p>
+    </footer>

@@ -1,0 +1,18 @@
+<header>
+                <nav id="menu">
+                        <ul>
+                            <li><%= link_to "Manipulating Time", root_path %></li>
+                            <li><%= link_to "About Us", about_us_path %></li>
+                            <li><%= link_to "Idea", idea_path %></li>
+                        </ul>
+                </nav>
+
+                <div id="authentication">
+                    <%= link_to "Log In", login_path, class:'login'  %>
+                    <%= link_to "Sign Up", signup_path, class:'signup'  %> 
+                <!--  
+                    <a href="#" class="user">Egor Osokin</a>
+                    <a href="#" class="notifications"><%= image_tag('notifications.png') %></a> -->
+                </div>
+        </header>
+        <div style="clear:both"></div>

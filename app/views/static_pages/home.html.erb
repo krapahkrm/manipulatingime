@@ -1,0 +1,70 @@
+<% provide(:title, 'Home') %>
+       <%= render 'layouts/header' %> 
+        <section id="main">
+            <div id="task_list">
+                <ul>
+                    <li><a href="#"><span class="name-task">Time to work</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">Time to rest</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">GYM</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">Time to study</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">Time to work</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">Time to rest</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">GYM</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                    <li><a href="#"><span class="name-task">Time to study YEAA</span>&#32;<span class="time-of-end-task">01:21:28</span></a></li>
+
+                </ul>
+            </div>
+
+            <div id="watch">
+                <div id="clock"></div>
+                <div id="time_now">
+                    <a href="#" class="left_arrow"></a>
+                    <div id="now">10:39:32 AM</div>
+                    <a href="#" class="right_arrow"></a>
+                </div>
+                <div style="clear:both"></div>
+                <div id="time_to_next">
+                    You have <span class="next">01:21:28</span> for the next time
+                </div>
+            </div>
+
+            <div id="editing_task">
+                <h2>Create new task</h2>
+                <form id="creating_task">
+                    <div>
+                        <input type="text" id="task_name" name="task_name" placeholder="Name task...">
+                    </div>
+                    <div>
+                        <input type="text" id="start_date" name="start_date" placeholder="Start time...">
+                    </div>
+                    <div>
+                        <input type="text" id="end_date" name="end_date" placeholder="Finish time...">
+                    </div>
+                    <div>
+                        <select size="1" name="color" id="selected_color">
+                            <option value="0000ff" class="blue">Blue</option>
+                            <option value="00ffff" class="cyan">Cyan</option>
+                            <option value="ffffff" class="white">White</option>
+                            <option value="ff00ff" class="magenta">Magenta</option>
+                            <option value="800000" class="maroon">Maroon</option>
+                       </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="OK">
+                    </div>
+                </form>
+            </form>
+            </div>
+            <div style="clear:both"></div>
+        </section>
+
+        <footer class="footer_blue">
+           <p>Manipulating Time &copy; 2016</p>
+        </footer>
