@@ -1,0 +1,547 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@import "reset.css" screen;
+@font-face {
+  font-family: 'Helvetica Neue LT Std Bold';
+  src: url(/assets/HelveticaNeueLTStd-Bd-d93fbd453feecf84e6708c5cd243199bd173e0f5f54aafc3b41e0ee0f3c66c3d.otf);
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Std Medium';
+  src: url(/assets/HelveticaNeueLTStd-Md-82d0f20d22fe09519916921ff72d0fdc8fa56a049cd67c3b7996ad11a77c033d.otf);
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Std Light';
+  src: url(/assets/HelveticaNeueLTStd-Lt-3ab0b3bf4fdaabba440268441464a42070e9adb66c8942a9224e2feacf1d3a61.otf);
+}
+/* line 31, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+body {
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 36, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+header {
+  background-color: #026aa7;
+  width: 90%;
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 44, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 49, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#menu {
+  float: left;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+/* line 55, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#menu ul li {
+  float: left;
+  border-right: 1px solid #fff;
+  font-family: 'Helvetica Neue LT Std Medium';
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+/* line 66, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#menu ul li.selected, #menu ul li:hover {
+  font-family: 'Helvetica Neue LT Std Bold';
+  font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 73, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#menu ul li:last-child {
+  border-right: none;
+}
+
+/* line 77, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#authentication {
+  float: right;
+  font-family: 'Helvetica Neue LT Std Bold';
+  font-size: 18px;
+}
+
+/* line 83, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#authentication .login, #authentication .signup, #authentication .user, #authentication .notifications {
+  float: left;
+}
+
+/* line 86, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#authentication .login, #authentication .user {
+  margin-right: 20px;
+}
+
+/* line 89, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#authentication a {
+  height: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-radius: 5px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+/* line 100, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.login {
+  background-color: #4f97c0;
+}
+
+/* line 103, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.login:hover {
+  background-color: #5ba1cb;
+}
+
+/* line 107, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.signup {
+  background-color: #4fc05f;
+}
+
+/* line 110, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.signup:hover {
+  background-color: #5ccb5e;
+}
+
+/* line 114, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.user {
+  background-color: #4f97c0;
+}
+
+/* line 118, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.user:hover {
+  background-color: #5ca1cb;
+}
+
+/* line 122, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#content {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #4d4d4d;
+  font-family: 'Helvetica Neue LT Std Light';
+}
+
+/* line 132, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+footer {
+  width: 100%;
+  text-align: center;
+  color: #d3d3d3;
+  font-family: 'Helvetica Neue LT Std Medium';
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+/* line 141, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+h1 {
+  color: #4d4d4d;
+  font-family: 'Helvetica Neue LT Std Bold';
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* line 149, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+h2 {
+  color: #fff;
+  font-family: 'Helvetica Neue LT Std Bold';
+  font-size: 18px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* line 162, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 167, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input {
+  margin-bottom: 20px;
+  height: 32px;
+  border-radius: 5px;
+  width: 320px;
+  font-size: 16px;
+  padding-left: 5px;
+  border: 1px solid #b1b1b1;
+}
+
+/* line 176, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/* line 180, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input.not_enter {
+  background-color: #edeff0;
+}
+
+/* line 183, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input.true_enter {
+  background-color: #ffffcc;
+  color: #333333;
+}
+
+/* line 188, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input.wrong_enter {
+  background-color: #ffffcc;
+  color: #333333;
+  border: 1px solid #ff6666;
+}
+
+/* line 194, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="text"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  border: none;
+}
+
+/* line 201, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+input, textarea {
+  outline: none;
+}
+
+/* line 205, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+::-ms-clear {
+  display: none;
+}
+
+/* line 209, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+::-webkit-input-placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+  font-family: "Helvetica Neue LT Std Light";
+}
+
+/* line 214, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+  font-family: "Helvetica Neue LT Std Light";
+}
+
+/* line 221, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input[type="submit"] {
+  background-color: #4fc05f;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Helvetica Neue LT Std Bold';
+  width: 230px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* line 231, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#new_user input[type="submit"]:hover {
+  background-color: #5ccb5e;
+}
+
+/* line 241, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#main {
+  background-color: #008bdb;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 247, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list {
+  width: 220px;
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Helvetica Neue LT Std Medium';
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 300px;
+  overflow: auto;
+  position: relative;
+  margin-right: 25px;
+}
+
+/* line 260, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#mover {
+  position: absolute;
+  width: 100%;
+  padding-top: 0px;
+  height: 300px;
+}
+
+/* line 266, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list ul {
+  width: 100%;
+}
+
+/* line 269, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list li {
+  height: 40px;
+}
+
+/* line 273, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+/* line 280, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list a span {
+  top: 12px;
+  position: relative;
+}
+
+/* line 284, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list ul li:nth-child(2n) {
+  background-color: rgba(235, 90, 70, 0.9);
+}
+
+/* line 288, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list ul li:nth-child(2n+1) {
+  background-color: rgba(97, 189, 79, 0.9);
+}
+
+/* line 292, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list .name-task {
+  float: left;
+  margin-left: 5px;
+  max-width: 103px;
+}
+
+/* line 297, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list .time-of-end-task {
+  float: right;
+  margin-right: 5px;
+}
+
+/* line 302, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#task_list .hover {
+  background-color: #0079bf;
+}
+
+/* line 306, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#editing_task {
+  width: 220px;
+  float: right;
+  margin-left: 25px;
+}
+
+/* line 312, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#watch {
+  width: 565px;
+  float: left;
+}
+
+/* line 318, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task input[type=text], select {
+  font-size: 14px;
+  color: #8d8d8d;
+  width: 180px;
+  background-color: #eaeaea;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 329, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task input, select {
+  font-family: 'Helvetica Neue LT Std Medium';
+  border-radius: 5px;
+  float: right;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+/* line 336, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task input[type=submit] {
+  width: 84px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: #4fc05f;
+}
+
+/* line 343, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task input[type=submit]:hover {
+  background-color: #5bcb5e;
+}
+
+/* line 346, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task select {
+  width: 202px;
+}
+
+/* line 349, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task select .blue {
+  background-color: blue;
+  color: white;
+}
+
+/* line 353, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task select .cyan {
+  background-color: cyan;
+  color: white;
+}
+
+/* line 357, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task select .white {
+  background-color: white;
+  color: black;
+}
+
+/* line 361, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#creating_task select .magenta {
+  background-color: magenta;
+  color: white;
+}
+
+/* line 368, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#clock {
+  margin-top: 25px;
+  width: 565px;
+  height: 565px;
+  background: url(/assets/bg_clock_full-ecbe74a267a89ca7cad7cbe8025a836b234f0f5c775e13472771de10051da8f7.png) no-repeat;
+  margin-bottom: 25px;
+}
+
+/* line 376, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.left_arrow {
+  background: url(/assets/left_arrow-de875aba631ec120cc5031ca02e235c8d5aa69e716ab0682f262a954e91808fe.png) no-repeat;
+  float: left;
+}
+
+/* line 380, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.left_arrow, .right_arrow {
+  display: block;
+  height: 28px;
+  width: 21px;
+  margin-top: 10px;
+}
+
+/* line 386, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.right_arrow {
+  background: url(/assets/right_arrow-9ac154c62d8ed07f6a28cf6f6192c7225cdd666e7d472d5522d12a5baacbf514.png) no-repeat;
+  float: right;
+}
+
+/* line 391, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#now {
+  text-align: center;
+  width: 523px;
+  font-size: 48px;
+  color: white;
+  font-family: 'Helvetica Neue LT Std Medium';
+  float: left;
+}
+
+/* line 400, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#time_to_next {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  color: white;
+  font-family: 'Helvetica Neue LT Std Medium';
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 411, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+.footer_blue {
+  background-color: #008bdb;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 419, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#error_explanation {
+  margin-bottom: 10px;
+  color: red;
+}
+/* line 423, /home/alex/RubyProjects/manipulating_time/app/assets/stylesheets/application.scss */
+#error_explanation .alert-error {
+  font-weight: 800;
+}
