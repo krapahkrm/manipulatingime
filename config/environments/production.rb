@@ -79,4 +79,6 @@ Rails.application.configure do
 
   config.force_ssl = true
   config.serve_static_assets = true
+
+  config.assets.precompile += ['application.scss','reset.css']
 end

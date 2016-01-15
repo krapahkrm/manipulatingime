@@ -1,19 +1,15 @@
+<% provide(:title, "#{@user.name}") %>
+<%= render 'layouts/header' %> 
 <p id="notice"><%= notice %></p>
+<section id="content">
+    <p>Name: <%= @user.name %><p>
+    	
+   	<p>Email: <%= @user.email %><p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+    <%= link_to 'Edit', edit_user_path(@user) %> 
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+    </section>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+    <footer>
+        <p>Manipulating Time &copy; 2016</p>
+    </footer>

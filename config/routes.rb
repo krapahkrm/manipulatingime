@@ -4,10 +4,13 @@ Rails.application.routes.draw do
   match '/idea', to: 'static_pages#idea', via: 'get'
 
   match '/signup', to: 'users#new', via: 'get'
-  match '/login', to: 'users#new', via: 'get'
+  match '/login', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
 
   resources :tasks
   resources :users
+
+  resources :sessions, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

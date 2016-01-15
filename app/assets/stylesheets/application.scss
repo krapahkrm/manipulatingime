@@ -14,6 +14,7 @@
  *= require_self
  */
 @import "reset.css" screen;
+@import "clock.css" screen;
 @font-face {
 	font-family: 'Helvetica Neue LT Std Bold';
     src: font-url('HelveticaNeueLTStd-Bd.otf');
@@ -232,7 +233,54 @@ textarea:-moz-placeholder{
 }
 
 
+form{
 
+}
+
+form label{
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+}
+form input{
+	margin-bottom: 20px;
+	height: 32px;
+	border-radius: 5px;
+	width: 320px;
+	font-size: 16px;
+	padding-left: 5px;
+	border: 1px solid #b1b1b1;
+}
+form input:focus{
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+form input.not_enter{
+	background-color: #edeff0;
+}
+form input.true_enter{
+	background-color: #ffffcc;
+	color: #333333;
+}
+
+form input.wrong_enter{
+	background-color: #ffffcc;
+	color: #333333;
+	border: 1px solid #ff6666;
+}
+form input[type="submit"]{
+	background-color: #4fc05f;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Helvetica Neue LT Std Bold';
+	width: 230px;
+	height: 40px;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+	background-color: #5ccb5e;
+}
 
 
 
@@ -364,11 +412,11 @@ textarea:-moz-placeholder{
 
 
 
-#clock{
+#clock_view{
 	margin-top: 25px;
 	width: 565px;
 	height: 565px;
-	background: image-url("bg_clock_full.png") no-repeat;
+	background: image-url("bg_clock_with_sectors.png") no-repeat;
 	margin-bottom: 25px;
 }
 
@@ -423,3 +471,25 @@ textarea:-moz-placeholder{
 	font-weight: 800;
 	}
 }
+
+
+
+.alert.alert-error{
+	margin-top:25px;
+	margin-left:50px;
+	margin-bottom:10px;
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
